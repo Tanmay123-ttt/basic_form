@@ -1,3 +1,4 @@
+'use client'
 import { useState } from 'react';
 
 const Contact = () => {
@@ -7,11 +8,11 @@ const Contact = () => {
     message: '',
   });
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
   };
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormFields((prevState) => ({ ...prevState, [name]: value }));
   };
