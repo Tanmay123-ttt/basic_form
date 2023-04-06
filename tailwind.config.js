@@ -1,20 +1,14 @@
-// /** @type {import('tailwindcss').Config} */
-// export const content = [];
-// export const theme = {
-//   extend: {},
-// };
-// export const plugins = [];
-
-
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+
+    // Or if using `src` directory:
+    // "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],
