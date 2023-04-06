@@ -85,10 +85,10 @@ const Todo = () => {
             ))}
           </ul>
         </div>
-        <div className="bg-pink-500 py-4 px-6">
+        <div className="bg-white py-4 px-6 flex justify-center">
           <button
             onClick={handleNewTodoSubmit}
-            className="text-white bg-pink-600 rounded-full p-4 focus:outline-none focus:ring-2 focus:ring-pink-600"
+            className="text-white bg-pink-500 rounded-full p-4 focus:outline-none focus:ring-2 focus:ring-pink-600"
           >
             Add
           </button>
